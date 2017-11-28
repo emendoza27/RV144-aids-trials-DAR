@@ -39,7 +39,10 @@ vacine = c(subgp-51,51)
 placebo =  c(subgp-74,74)
 results = as.table(cbind(vacine,placebo))
 rownames(results) <- c("none","aids")
-
+vac2=c(8138,62)
+pcebo2=c(8138,62)
+res2=as.table(cbind(vac2,pcebo2))
+rownames(res2) <- c("none","aids")
 ```
 
 
@@ -51,6 +54,8 @@ rownames(results) <- c("none","aids")
 ```{r}
 barchartGC(results,type = "percent")
 ```
+
+In this chart we can see that there is a 10% diffrence in the amount of people that got aids, benifiting the ones who got the vacine. With the people that got the placebo 10% morethan the ones that recived the vaccine were contaged with aids.
 
 ### Numerical Results
 
@@ -74,5 +79,5 @@ chisqtestGC(results, graph = TRUE)
 
 
 ## Conclusions
-
+In all the rresults we can see that there was a difrence of 20% of people that were saved form being contaged of aids because they had the vaccne. as we can see there is a positive outcome and we found that the vaccine is a benifit for the society.
 <Summarise your results as to the effectiveness of the vaccine with explanations that could be understood by your mom>
